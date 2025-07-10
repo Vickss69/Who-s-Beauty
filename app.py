@@ -74,7 +74,7 @@ def calculate_face_shape(landmarks):
         cheek_width = np.linalg.norm(landmarks[8] - landmarks[3])
 
         # Estimate forehead region
-        forehead_height = (landmarks[1][1] + landmarks[2][1]) // 2 - landmarks[0][1])
+        forehead_height = ((landmarks[1][1] + landmarks[2][1]) // 2 - landmarks[0][1])
         total_face_height = face_height + forehead_height
 
         # Ratios for classification
