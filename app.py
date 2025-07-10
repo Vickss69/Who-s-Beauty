@@ -276,7 +276,7 @@ def calculate_eye_shape(eye_landmarks):
     try:
         # Calculate height and width of the eye
         width = np.linalg.norm(np.array(eye_landmarks[0]) - np.array(eye_landmarks[1]))
-        height = (np.linalg.norm(np.array(eye_landmarks[2]) - np.array(eye_landmarks[3])) / 2
+        height = (np.linalg.norm(np.array(eye_landmarks[2]) - np.array(eye_landmarks[3])) / 2)
 
         # Aspect ratio
         aspect_ratio = height / width if width > 0 else 0
